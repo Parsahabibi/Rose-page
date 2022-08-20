@@ -1,0 +1,158 @@
+@font-face{
+    font-family: myFirstFont;
+    src: url(fonts/AdobeClean-Regular.woff) format('woff');
+
+}
+a{
+    color: #597188;
+    text-decoration: none;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:myFirstFont;
+    background-color:white;
+    margin-top: 15px;
+    overflow-y: scroll;
+    border-radius: 5px;
+}
+.header{
+    height: 20px;
+    width:100%;
+    background-color: white;
+    margin: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 1px solid lightgrey;
+}
+.container{
+    background-color: white;
+    height: 100%;
+    width: 96%;
+    margin: auto;
+    display: flex;
+    padding-left: 30px;
+    padding-right: 0px;
+}
+.title{
+    width: 28%;
+}
+.title h2{
+    padding: 30px 0px 20px 0px;
+
+}
+.title h4{
+    padding-top: 20px;
+}
+.title p{
+    padding-top: 20px;
+    color:lightgray ;
+}
+.up_icon{
+    padding-bottom: 15px;
+}
+.background_icon{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: lightgray;  
+    display:flex;
+    margin-right: 10px;
+    margin-top: 0;
+}
+svg{
+    margin: auto;
+    width: 15px;
+    height: 15px;
+}
+.background_icon:hover{
+    background-color: darkgray;
+}
+.icon_container{
+    display: flex;
+    justify-content:baseline;
+    margin-top: 20px;
+    margin-bottom: 45px;
+}
+.main{
+    font-family: myFirstFont;
+    line-height: 40px;
+    background-color:#F7F8F9;
+    width: 80%;    
+    padding-top: 110px;
+    text-align: center;
+    font-size: 28px;
+    color: #012B55;
+}
+.more{
+    padding-top:40px;
+    color: #597188;
+    font-size: 18px;
+    font-weight: 500;
+}
+.pictures_container{
+    display: flex;
+    font-family: myFirstFont;
+}
+.pictures_container p{
+    text-align: center;
+}
+.pictures{
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: repeat(2,1fr);
+    padding-left: 430px;
+    padding-top: 5px;
+    gap: 5px;
+}
+.pictures:hover a{
+    color: white;
+}
+.icon_container2{
+    display: flex;
+    justify-content:baseline;
+    margin-top: 50px;
+    margin-left: 905px;
+}
+.text_end{
+    margin-left: 870px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    color:#597188;
+}
+.image{
+    position: relative;
+}
+.hover{
+    position:absolute;
+    width: 100%;
+    height: 98%;
+    top: 0;
+    left: 0;
+    background-color:#032f6b;
+    opacity: 0;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+.hover:hover{
+    opacity: 0.8;
+}
+.arrows{
+    position: fixed;
+    display: flex;
+    height: 50px;
+    width: 50px;
+    background-color:rgba(1, 43, 85, 0.1);
+    right: 40px;
+    bottom: 40px;
+    border-radius: 10px;
+}
+.arrows:hover{
+    background-color:darkgray;
+}
